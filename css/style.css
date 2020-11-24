@@ -32,10 +32,15 @@
   height: 60px;
 }
 
+.container-fluid .bl-jumbotron {
+  border-radius: 0;
+}
+
 .bl-jumbotron, .about {
   background-color: #1abc9c;
   color: white;
   text-align: center;
+  border-radius: 0;
 }
 
 .bl-jumbotron > img {
