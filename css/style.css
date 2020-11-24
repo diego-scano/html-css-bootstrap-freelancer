@@ -1,15 +1,44 @@
-nav {
+.bl-container-fluid {
+  padding: 0;
+}
+
+.bl-navbar {
   background-color: #2c3e50;
+  color: white;
+  margin-bottom: 0;
+  border-radius: 0;
   height: 80px;
 }
 
-.jumbotron-freelancer, .second-section {
+.bl-navbar .navbar-brand, .bl-navbar .navbar-nav>li>a {
+  color: #fff;
+  line-height: 48px;
+}
+
+.bl-navbar .navbar-brand {
+  font-size:24px;
+  font-weight: bolder;
+}
+
+.bl-navbar .navbar-nav>li>a {
+  font-weight: bolder;
+}
+
+.bl-navbar .navbar-brand:hover, .bl-navbar .navbar-nav>li>a:hover {
+  color: #1ABC9C;
+}
+
+.navbar-header button {
+  height: 60px;
+}
+
+.bl-jumbotron, .about {
   background-color: #1abc9c;
   color: white;
   text-align: center;
 }
 
-.jumbotron-freelancer > img {
+.bl-jumbotron > img {
   height: 300px;
 }
 
@@ -52,18 +81,51 @@ nav {
   vertical-align: middle;
 }
 
-.first-section img {
+.portfolio img {
   border-radius: 20px;
   margin: 30px auto;
   width: 100%;
 }
 
-.form-section {
-  color: #2c3e50;
+.about {
+  padding: 30px 0;
 }
 
-textarea {
-  width: 100%;
+.about div p {
+  padding: 20px 0;
+}
+
+.download-button {
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-section {
+  margin: 30px 0;
+}
+
+.bl-form ::placeholder, .bl-form input, .bl-form textarea{
+  color: #2c3e50;
+  font-size: 15px;
+}
+
+.bl-form .form-group{
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.bl-form input, .bl-form textarea{
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding-left: 0;
+}
+
+.send-button button {
+  background-color: #1abc9c;
+  color: white;
 }
 
 footer {
@@ -72,16 +134,27 @@ footer {
 
 .footer1 {
   background-color: #3a546d;
+  padding: 40px 0;
+}
+
+.section-footer1 {
+  padding: 10px 0;
 }
 
 #start-bootstrap {
   color: #1abc9c;
 }
 
-.icons i {
+.icons div {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
   border: 1px solid white;
   border-radius: 50%;
   padding: 10px;
+}
+
+.icons div i {
   color: white;
 }
 

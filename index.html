@@ -10,12 +10,32 @@
   </head>
   <body>
 
-    <div class="container-fluid">
+    <div class="container-fluid bl-container-fluid">
 
       <header>
-        <nav></nav>
 
-        <div class="jumbotron jumbotron-freelancer">
+        <nav class="navbar navbar-default bl-navbar">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand text-uppercase" href="#">Start Bootstrap</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="text-uppercase"><a href="#">Portfolio</a></li>
+                <li class="text-uppercase"><a href="#">About</a></li>
+                <li class="text-uppercase"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="jumbotron bl-jumbotron">
           <img src="img/avatar.svg" alt="avatar">
           <h1>START BOOTSTRAP</h1>
           <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div>
@@ -28,7 +48,7 @@
 
         <div class="container">
 
-          <div class="row center first-section">
+          <div class="row center portfolio">
             <h2>PORTFOLIO</h2>
             <div class="star2"><i class="fa fa-star" aria-hidden="true"></i></div>
             <div class="col-xs-12 col-sm-6 col-md-4">
@@ -53,16 +73,21 @@
 
         </div>
 
-        <div class="second-section">
+        <div class="about">
           <div class="container">
             <h2>ABOUT</h2>
-            <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div>
-            <div class="col-xs-12 col-sm-6">
-              <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+            <div class="row">
+              <div class="star"><i class="fa fa-star" aria-hidden="true"></i></div>
+              <div class="col-xs-12 col-sm-6">
+                <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+              </div>
             </div>
-            <div class="col-xs-12 col-sm-6">
-              <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-            </div>
+            <a href=""><span class="download-button">
+              <i class="fa fa-download" aria-hidden="true"></i> Download
+            </span></a>
           </div>
         </div>
 
@@ -70,32 +95,23 @@
           <div class="container">
             <h2>CONTACT ME</h2>
             <div class="star2"><i class="fa fa-star" aria-hidden="true"></i></div>
-            <form class="form-horizontal left">
-            <div class="form-group">
-              <label>Name</label><br>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputname">
+            <form class="bl-form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name">
               </div>
-            </div>
-            <div class="form-group">
-              <label>Email address</label><br>
-              <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputemail">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email Address">
               </div>
-            </div>
-            <div class="form-group">
-              <label>Phone Number</label><br>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputnumber">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Phone Number">
               </div>
-            </div>
-            <div class="form-group">
-              <label>Message</label><br>
-              <div class="col-sm-10">
-                <textarea name="name" rows="8" cols="80"></textarea>
+              <div class="form-group">
+                <textarea class="form-control" rows="5" placeholder="Message"></textarea>
               </div>
-            </div>
-            <button type="button" class="btn btn-primary">Send</button>
+              <div class="send-button left">
+                <button type="submit" class="btn btn-default">Send</button>
+              </div>
+            </form>
           </div>
 
         </div>
@@ -105,24 +121,26 @@
       <footer>
         <div class="footer1">
           <div class="container center">
-            <div class="col-xs-12 col-sm-4">
-              <h4>LOCATION</h4>
-              <span>2215 John Daniel Drive Clark, MO 54243</span>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-              <h4>AROUND THE WEB</h4>
-              <span class="icons">
-                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </span>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-              <h4>ABOUT FREELANCER</h4>
-              <span>
-                Freelance is a free to use, open source Bootstrap theme created by <a id="start-bootstrap" href="">Start Bootstrap</a>.
-              </span>
+            <div class="row">
+              <div class="col-xs-12 col-sm-4 section-footer1">
+                <h4>LOCATION</h4>
+                <span>2215 John Daniel Drive Clark, MO 54243</span>
+              </div>
+              <div class="col-xs-12 col-sm-4 section-footer1">
+                <h4>AROUND THE WEB</h4>
+                <span class="icons">
+                  <div><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                  <div><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+                  <div><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                  <div><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+                </span>
+              </div>
+              <div class="col-xs-12 col-sm-4 section-footer1">
+                <h4>ABOUT FREELANCER</h4>
+                <span>
+                  Freelance is a free to use, open source Bootstrap theme created by <a id="start-bootstrap" href="">Start Bootstrap</a>.
+                </span>
+              </div>
             </div>
           </div>
         </div>
